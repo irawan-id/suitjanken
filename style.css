@@ -1,0 +1,418 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.navbar {
+    width: 100vw;
+    height: 3em;
+    background-color: #375263;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(187, 185, 185);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    font-size: 2em;
+    color: #375263;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.count {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 45px 45px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container-skor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pscore {
+    width: 45%;
+    text-align: right;
+    flex: 1;
+}
+
+.score {
+    width: 5%;
+    text-align: center;
+    flex: 0.5;
+}
+
+.cscore {
+    width: 45%;
+    text-align: left;
+    flex: 1;
+}
+
+.player {
+    margin: 10px auto;
+}
+
+.comp {
+    margin: 10px auto;
+}
+
+.info {
+    width: 150px;
+    height: 75px;
+    border: 1px solid #375263;
+    margin: 0px auto;
+    text-align: center;
+    color: #375263;
+    line-height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.gunting,
+.batu,
+.kertas {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.img-comp {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.gunting:hover,
+.batu:hover,
+.kertas:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #acacac;
+    transform: scale(1.1);
+}
+
+.gunting:focus,
+.batu:focus,
+.kertas:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #acacac;
+    transform: scale(1.1);
+}
+
+.bayang {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #acacac;
+}
+
+button {
+    width: 50px;
+    height: 40px;
+    color: rgb(187, 185, 185);
+    background-color: #375263;
+    padding: 5px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #363535;
+}
+
+button:hover {
+    box-shadow: inset 3px 3px 3px #cbced1;
+}
+
+@media (min-width: 992px) {
+    body {
+        width: 100%;
+        font-family: Helvetica;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+        color: rgb(238, 235, 235);
+        font-weight: bold;
+        margin: auto;
+    }
+    h2 {
+        font-size: 2em;
+        color: #375263;
+        font-weight: bold;
+    }
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .count {
+        width: 900px;
+        margin: auto;
+        border-bottom: 2px solid #acacac;
+        box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 45px 45px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container-skor {
+        display: flex;
+        justify-content: space-around;
+    }
+    .pscore {
+        width: 440px;
+        height: 50px;
+        text-align: right;
+        flex: 1;
+    }
+    .score {
+        width: 20px;
+        height: 50px;
+        text-align: center;
+        flex: 0.5;
+    }
+    .cscore {
+        width: 440px;
+        height: 50px;
+        text-align: left;
+        flex: 1;
+    }
+    .card {
+        width: 600px;
+        margin: 25px auto;
+        box-sizing: border-box;
+    }
+    .player {
+        width: 600px;
+        height: 200px;
+        margin: 20px auto;
+    }
+    .comp {
+        width: 600px;
+        height: 200px;
+        margin: 20px auto;
+    }
+    .menang {
+        width: 600px;
+        margin: 20px auto;
+    }
+    .seri {
+        width: 600px;
+        margin: 20px auto;
+    }
+    .kalah {
+        width: 600px;
+        margin: 20px auto;
+    }
+    .info {
+        width: 150px;
+        height: 75px;
+        border: 1px solid #375263;
+        margin: 0px auto;
+        text-align: center;
+        color: #375263;
+        line-height: 70px;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    .gunting,
+    .batu,
+    .kertas {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        border: 2px solid black;
+        border-radius: 100%;
+        float: center;
+    }
+    .img-comp {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        border: 2px solid black;
+        border-radius: 100%;
+    }
+    .gunting:hover,
+    .batu:hover,
+    .kertas:hover,
+    .active {
+        cursor: pointer;
+        box-shadow: 0 0 10px 5px #acacac;
+    }
+    .gunting:focus,
+    .batu:focus,
+    .kertas:focus {
+        cursor: pointer;
+        box-shadow: 0 0 10px 5px #acacac;
+        transform: scale(1.1);
+    }
+    .bayang {
+        cursor: pointer;
+        box-shadow: 0 0 10px 5px #acacac;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        color: rgb(187, 185, 185);
+        background-color: #696969;
+        padding: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #363535;
+    }
+    button:hover {
+        box-shadow: inset 3px 3px 3px #363535;
+    }
+}
